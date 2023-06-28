@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Counter</title>
+  <style>
+    button {
+      border: solid;
+      border-radius: 15px;
+      height: 40px;
+      width: 100px;
+      margin-right: 10px;
+      color: black;
+      background-color: white;
+      
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style="display: flex; justify-content: center;flex-direction: column; align-items: center;">
+
+  <p style="
+    font-size: 30px;
+    margin-top: 140px;
+    ">Counter</p>
+
+  <p class="p-tag" style="font-size: 40px; margin-top: 0;">0</p>
+  <div>
+    <button onclick="decreaseOne();">Decrease</button>
+    <button onclick="reset();">Reset</button>
+    <button onclick="
+      increaseOne();
+    ">Increase</button>
+
+  </div>
+  
+
+  <script>
+    const pTag = document.querySelector('.p-tag');
+    
+    // let intPTag = parseInt(pTag.innerHTML);
+    let intPTag = 0;
+    function increaseOne () {
+      intPTag += 1;
+      pTag.innerHTML = intPTag;
+    }
+
+    function decreaseOne () {
+      intPTag -= 1;
+      pTag.innerHTML = intPTag;
+    }
+
+    function reset () {
+      intPTag = 0;
+      pTag.innerHTML = intPTag;
+    }
+    
+    
+    console.log(parseInt(pTag.innerHTML) + 4);
+
+  </script>
+  
+</body>
+</html> 
