@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    button {
+      border: none;
+      border-radius: 15px;
+      height: 35px;
+      width: 50px;
+      margin-bottom: 5px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blue-button {
+      background-color: rgb(41, 41, 255);
+      color: white;
+    }
+
+    .green-button {
+      background-color: green;
+      color: white;
+    }
+
+    .red-button {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+      <p class="js-script">Click one button</p>
+    
+
+    <button class="blue-button js-blue-button" onclick="
+      blueButton();
+    ">Blue</button>
+    <button class="green-button js-green-button" onclick="greenButton()">Green</button>
+    <button class="red-button js-red-button on" onclick="redButton()">Red</button>
+  </div>
+
+  <script>
+
+    const pTag = document.querySelector('.js-script');
+    let pTagValue = pTag.innerHTML;
+
+    function blueButton () {
+      pTag.style.color = 'rgb(41, 41, 255)';
+      pTag.textContent = pTagValue = 'You cliked blue button';
+    }
+
+    function greenButton () {
+      pTag.style.color = 'green';
+      pTag.textContent = pTagValue = 'You cliked green button';
+    }
+
+    function redButton () {
+      pTag.style.color = 'red';
+      pTag.textContent = pTagValue = 'You cliked red button';
+    }
+    
+    
+    
+    
+  </script>
+</body>
+</html>
