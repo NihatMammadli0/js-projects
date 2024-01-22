@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    
+    <title>Variables</title>
+    <style>
+      .button-1:hover {
+        background-color: rgb(196, 195, 195);
+        
+        
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- <button class="js-button-1 button-1" onclick="
+      pushValue1();
+      ">1</button>
+
+    <button class="js-button-1 button-1" onclick="
+      pushValue2();
+      ">2</button>
+
+      <button class="js-button-1 button-1" onclick="
+      pushValue3();
+      ">3</button>
+
+    <button class="js-button-plus button-1">+</button>
+
+    <button class="js-button-2 button-1" onclick="
+      pushValue4();
+    ">4</button>
+    
+    <button class="js-button-equal button-1" onclick="
+
+      findSum();
+    ">=</button>
+
+    <p class="js-result">Result:</p> -->
+
+
+
+      <input type="text" name="" id="" placeholder="type.." class="input">
+      <button class="button">Click</button>
+
+
+
+
+
+    <script>
+
+      const input = document.querySelector(".input")
+      const button = document.querySelector(".button")
+
+
+      button.addEventListener('click', () => {
+        let count = 0;
+
+        while (input.value > 10) {
+          input.value = input.value % 10
+          console.log(input.value);
+          // count++;
+        }
+
+        // console.log(count);
+      })
+
+
+
+
+
+      // let sum = 0;
+      // const nums = [];
+
+      // function pushValue1() {
+      //   nums.push(1);
+      //   console.log(nums);
+      // }
+
+      // function pushValue2() {
+      //   nums.push(2);
+      //   console.log(nums);
+      // }
+
+      // function pushValue3() {
+      //   nums.push(3);
+      //   console.log(nums);
+      // }
+
+      // function pushValue4() {
+      //   nums.push(4);
+      //   console.log(nums);
+      // }
+
+      // function findSum() {
+      //   for(let i = 0; i < nums.length; i++) {
+      //     sum += nums[i];
+      //   }
+      //   document.querySelector('.js-result').innerHTML = `Result: is ${sum}`;
+      //   console.log(sum);
+      // }
+
+      // console.log(sum);
+
+      // const value_1 = document.querySelector('.js-button-1').innerHTML
+
+      // const value_2 = document.querySelector('.js-button-2').innerHTML
+
+      // const value_plus = document.querySelector('.js-button-plus').innerHTML
+
+      // const value_equal = document.querySelector('.js-button-equal').innerHTML
+
+      
+
+
+    </script>
+
+  </body>
+</html>
