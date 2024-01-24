@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Coin Flip</title>
+
+
+
+</head>
+<body>
+
+  <script>
+
+    let randomNumber = Math.random();
+    let computerChoice = '';
+
+    if (randomNumber < 0.5) {
+      computerChoice = 'heads';
+    } else if(randomNumber > 0.5) {
+      computerChoice = 'tails';
+    }
+    
+  </script>
+
+
+  <p>Heads of Tails?</p>
+
+  <button onclick="
+    if(computerChoice === 'heads') {
+      console.log('it is heads, you win!!');
+    } else if (computerChoice === 'tails'){
+      console.log('Computer choose tails, you lose!!')
+    }
+  ">Heads</button>
+
+  
+  <button onclick="
+    if(computerChoice === 'heads') {
+      console.log('it is heads, you lose!!');
+    } else if (computerChoice === 'tails'){
+      console.log('Computer choose tails, you win!!')
+    }
+  
+  ">Tails</button>
+
+
+  
+  
+</body>
+</html>
