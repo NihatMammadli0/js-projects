@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <style>
+
+        .profile-photo {
+            display: inline-block;
+            margin-right: 9px;
+        }
+        .profile-photo-details {
+            width: 50px;
+            border-radius: 40px;
+        }
+        .profile-info {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .profile-name {
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .general-name {
+            width: 140px;
+            margin-top: 6px;
+        }
+        .confirm-button {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .delete-button {
+            display: inline-block;
+
+        }
+        .buttons {
+            display: inline-block;
+            vertical-align: 23px;
+            margin-bottom: 10px;
+        }
+
+        .confirm-button-design {
+            width: 80px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: #FFFFFF;
+            background-color: #0095f6;
+            cursor: pointer;
+        }
+        .confirm-button-design:hover {
+            background-color: rgb(34, 34, 114);
+        }
+        .delete-button-design {
+            cursor: pointer;
+            width: 80px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: #000000;
+            background-color: #EFEFEF;
+        }
+        .delete-button-design:hover {
+            background-color: rgb(115, 109, 109);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="profile-photo">
+        <img src="photoes/alfa-academy.jpeg" class="profile-photo-details">
+    </div>
+
+    <div class="profile-info">
+        <p class="profile-name">
+            _alfa_academy
+        </p>
+        <p class="general-name">
+            Alfa Academy
+        </p>
+    </div>
+
+    <div class="buttons">
+        <div class="confirm-button" onclick="
+                clickConfirm();
+            ">
+            <input type="button" value="Confirm" class="confirm-button-design">
+        </div>
+    
+        <div class="delete-button" onclick="
+            clickDelete();
+        ">
+            <input type="button" value="Delete" class="delete-button-design">
+    
+        </div>
+
+    </div>
+    
+    
+    <script>
+
+        function clickConfirm() {
+            alert('you confirmed the follow request');
+        }
+
+        function clickDelete() {
+            alert('you delete the follow request');
+        }
+
+    </script>
+    
+
+
+    
+</body>
+</html>
